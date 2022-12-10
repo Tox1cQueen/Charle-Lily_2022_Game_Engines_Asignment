@@ -5,17 +5,14 @@ using UnityEngine;
 public class StringHandler : MonoBehaviour
 {
 
+    public List<GameObject> toasterObjects = new List<GameObject>(); 
     public string currentValue = "";
-    public GameObject button1;
-    public GameObject button2;
-    public GameObject button3;
-    public GameObject enterButton;
-    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
+
     }
 
     // Update is called once per frame
@@ -50,7 +47,7 @@ public class StringHandler : MonoBehaviour
             }
         }
     }
-    
+
     void PrintName(GameObject go)
     {
         print(go.name);

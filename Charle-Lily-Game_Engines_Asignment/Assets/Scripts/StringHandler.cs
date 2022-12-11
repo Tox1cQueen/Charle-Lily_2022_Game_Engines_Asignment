@@ -1,12 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class StringHandler : MonoBehaviour
 {
 
-    public List<GameObject> toasterObjects = new List<GameObject>(); 
+    public string[] toasterObjectCodes;
+    public Rigidbody[] toasterObjects;
     public string currentValue = "";
+    public float force = 5;
+    public Rigidbody testPrefab;
+    public Transform spawnLocation;
+    private Rigidbody currentToast;
 
     // Start is called before the first frame update
     void Start()
@@ -25,22 +33,25 @@ public class StringHandler : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
-                if (hit.transform.name == "1")
+
+                Debug.Log(hit.transform.name);
+
+                if (hit.transform.tag == "Number")
                 {
-                    currentValue = (currentValue + "1");
+                    currentValue = (currentValue + hit.transform.name);
                 }
 
-                if (hit.transform.name == "2")
+                if (toasterObjectCodes.Contains(currentValue) && hit.transform.name == "Enter")
                 {
-                    currentValue = (currentValue + "2");
+                    int index = Array.IndexOf(toasterObjectCodes, currentValue);
+                    currentToast = toasterObjects[index];
+                    Vector3 Spawnpoint = new Vector3(spawnLocation.position.x, spawnLocation.position.y,
+                        spawnLocation.position.z);
+                    Instantiate(currentToast, Spawnpoint, Random.rotation);
+                    currentValue = "";
                 }
 
-                if (hit.transform.name == "3")
-                {
-                    currentValue = (currentValue + "3");
-                }
-
-                if (hit.transform.name == "Enter")
+                else if (hit.transform.name == "Enter")
                 {
                     currentValue = "";
                 }
@@ -53,3 +64,5 @@ public class StringHandler : MonoBehaviour
         print(go.name);
     }
 }
+    
+ 

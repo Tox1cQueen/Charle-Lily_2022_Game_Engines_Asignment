@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material 3
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: New Material 5
+  m_Shader: {fileID: 4800000, guid: 04d95dc90d3ccf84ebce53560cd33cf3, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -72,12 +72,25 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _SkyExponent1: 8.5
+    - _SkyExponent2: 3
+    - _SkyIntensity: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SunAlpha: 0
+    - _SunAltitude: 38
+    - _SunAzimuth: 20
+    - _SunBeta: 1
+    - _SunIntensity: 0
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.1720128, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SkyColor1: {r: 0.13432328, g: 0, b: 0.2830189, a: 0}
+    - _SkyColor2: {r: 0.3914833, g: 0, b: 1, a: 0}
+    - _SkyColor3: {r: 0.17063703, g: 0, b: 0.3018868, a: 0}
+    - _SunColor: {r: 0.81787586, g: 0, b: 1, a: 1}
+    - _SunVector: {r: 0.269, g: 0.615, b: 0.74, a: 0}
   m_BuildTextureStacks: []

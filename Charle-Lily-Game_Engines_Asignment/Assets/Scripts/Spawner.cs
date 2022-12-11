@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public Rigidbody prefab;
-    public Vector3 randRotate;
     public float randForce;
     public Vector3 pos;
 
@@ -19,12 +18,13 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         randForce = Random.Range(400f, 500f);
-        randRotate = new Vector3(Random.Range(-180f, 180f), Random.Range(-180f, 180f), Random.Range(-180f, 180f));
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             Spawn();
         }
+
+       // Spawn();
     }
 
     void Spawn()

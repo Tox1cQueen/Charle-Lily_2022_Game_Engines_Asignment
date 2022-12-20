@@ -178,11 +178,11 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
-  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
-  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
-  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
-  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
-  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
+  - {fileID: 2100000, guid: 96a870249f2bbcb448c4b75ee38a421e, type: 2}
+  - {fileID: 2100000, guid: e8d1ab103ca635f4e8f7d4f8eb757ed3, type: 2}
+  - {fileID: 2100000, guid: 195917f5755177d4d9f234f3a6485a7f, type: 2}
+  - {fileID: 2100000, guid: 064f3bc9d39d99f478aec8085c6fdf0a, type: 2}
+  - {fileID: 2100000, guid: 3266670f0c1ca5c4d93fe482037ae97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 13
+  random: 1
   mesh: {fileID: 8585066033606536678}
 --- !u!1 &5856853738692841402
 GameObject:
@@ -478,7 +479,7 @@ Transform:
   - {fileID: 2910488175833570920}
   - {fileID: 6308575204259162591}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &595777048244522379
 Rigidbody:

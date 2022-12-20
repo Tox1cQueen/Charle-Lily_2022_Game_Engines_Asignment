@@ -12,6 +12,7 @@ public class Launcher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        force = Random.Range(20.0f, 30.0f);
         audioSource = GetComponent<AudioSource>();
         rb.AddForce(Vector3.up * force, ForceMode.Impulse);
         audioSource.Play();
@@ -20,6 +21,6 @@ public class Launcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

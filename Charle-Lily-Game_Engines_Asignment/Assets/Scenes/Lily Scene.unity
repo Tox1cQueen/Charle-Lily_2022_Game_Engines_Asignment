@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.039022345, g: 0, b: 0.23430791, a: 1}
+  m_IndirectSpecularColor: {r: 0.03902234, g: 0, b: 0.23430789, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7892,19 +7892,6 @@ MonoBehaviour:
   - {fileID: 4729394344294254192, guid: 8dc689e8f7d0a88489f43654a5575b9f, type: 3}
   - {fileID: 6603185492261275280, guid: d089116dabc56a14c81fdf19ec4e083f, type: 3}
   - {fileID: 5003497907666718159, guid: a7049419ae9fa764e81bfeeed32fca61, type: 3}
-  toasterAudioSource: {fileID: 0}
-  toasterObjectAudio:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   currentValue: 
   spawnLocation: {fileID: 236950157}
 --- !u!114 &1614212238
@@ -7928,14 +7915,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614212233}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d280fd62ee7a7d54bb8dd429d4064bde, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.073
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

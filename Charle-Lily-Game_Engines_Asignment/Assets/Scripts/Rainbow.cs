@@ -32,6 +32,8 @@ public class Rainbow : MonoBehaviour
         {
             hue = 0;
         }
+        sat = 1;
+        vi = 1;
         mesh.material.color = Color.HSVToRGB(hue, sat, vi);
     }
 }

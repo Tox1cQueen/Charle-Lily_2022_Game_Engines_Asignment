@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rainbow : MonoBehaviour
 {
     public float speed;
-
+    public bool random = true;
     private float hue;
     private float sat;
     private float vi;
@@ -14,10 +14,16 @@ public class Rainbow : MonoBehaviour
     void Start()
     {
         mesh = GetComponent<MeshRenderer>();
-       
+        if (random == true)
+        {
+            hue = Random.Range(0f, 1f);
+        }
+        sat = 1;
+        vi = 1;
+        mesh.material.color = Color.HSVToRGB(hue, sat, vi);
     }
 
-    
+
     void Update()
     {
         Color.RGBToHSV(mesh.material.color, out hue, out sat, out vi);
@@ -26,9 +32,6 @@ public class Rainbow : MonoBehaviour
         {
             hue = 0;
         }
-
-        sat = 1;
-        vi = 1;
         mesh.material.color = Color.HSVToRGB(hue, sat, vi);
     }
 }

@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce221c70a41f9764cbd6e10faa3f7a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 13
+  speed: 8
+  random: 1
   mesh: {fileID: 0}
 --- !u!1 &5081790406213945789
 GameObject:
@@ -133,7 +134,7 @@ Transform:
   - {fileID: 1885350056941651074}
   - {fileID: 3714827931937944402}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &5352330943896450649
 Rigidbody:

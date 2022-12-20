@@ -6266,10 +6266,9 @@ MonoBehaviour:
   - 420
   toasterObjects:
   - {fileID: 4323403360880405173, guid: 3f262e44875f605438508ae163e77e37, type: 3}
+  toasterAudioSource: {fileID: 0}
+  toasterObjectAudio: []
   currentValue: 
-  force: 100
-  testPrefab: {fileID: 2935656039931556035, guid: 6e16360f0476fe341962aee13fe67064,
-    type: 3}
   spawnLocation: {fileID: 236950157}
 --- !u!114 &1614212238
 MonoBehaviour:

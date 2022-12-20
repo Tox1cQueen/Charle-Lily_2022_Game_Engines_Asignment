@@ -94,12 +94,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
         fallSpeed = velocity.y;
-
-
-        if (Input.GetKey("escape"))
-        {
-            SceneManager.LoadScene("Menu");
-        }
+        
     }
 }
 

@@ -5942,7 +5942,7 @@ MonoBehaviour:
   - 30
   - 64
   toasterObjects:
-  - {fileID: 9086466284260164445, guid: ddc4234ba638c814ab27f803465c06b8, type: 3}
+  - {fileID: 7925141221769272716, guid: db3ba61269621d942b054755b08da3b3, type: 3}
   - {fileID: 2244072313261949593, guid: e0f1cdb2fcc210a458dfedc29c167f0c, type: 3}
   - {fileID: 2928125812353681804, guid: 633f3eba8d48d2b479f53a126b97336b, type: 3}
   - {fileID: 81984560915499102, guid: 3b64f7491d385b1478250ae5d8619644, type: 3}

@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 127088298682345912}
   - component: {fileID: 2807220760901426154}
   - component: {fileID: 8585066033606536678}
+  - component: {fileID: 1568463726}
   m_Layer: 0
   m_Name: imagetostl_mesh
   m_TagString: Untagged
@@ -176,12 +177,12 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -156486658544998735, guid: 413aaaa141eacfe40883179244b956d7, type: 3}
-  - {fileID: 5865586234719623449, guid: 413aaaa141eacfe40883179244b956d7, type: 3}
-  - {fileID: 3473123015285894068, guid: 413aaaa141eacfe40883179244b956d7, type: 3}
-  - {fileID: 8801679490653950251, guid: 413aaaa141eacfe40883179244b956d7, type: 3}
-  - {fileID: 4913426069162526988, guid: 413aaaa141eacfe40883179244b956d7, type: 3}
-  - {fileID: 8588245910270914291, guid: 413aaaa141eacfe40883179244b956d7, type: 3}
+  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
+  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
+  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
+  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
+  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
+  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,6 +204,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1568463726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215026084571844679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce221c70a41f9764cbd6e10faa3f7a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 13
+  mesh: {fileID: 8585066033606536678}
 --- !u!1 &5856853738692841402
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +478,7 @@ Transform:
   - {fileID: 2910488175833570920}
   - {fileID: 6308575204259162591}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &595777048244522379
 Rigidbody:

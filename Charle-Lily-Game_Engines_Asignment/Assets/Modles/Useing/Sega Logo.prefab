@@ -260,7 +260,7 @@ Transform:
   - {fileID: 8054714623158171180}
   - {fileID: 2277534213064680583}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4729394344294254192
 Rigidbody:
@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: 5075481975035625980}
   - component: {fileID: 7014771750891549614}
   - component: {fileID: 3497170210460779938}
+  - component: {fileID: 7238150428189541759}
   m_Layer: 0
   m_Name: imagetostl_mesh
   m_TagString: Untagged
@@ -481,8 +482,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -156486658544998735, guid: deade267438d0084396fac066e81d853, type: 3}
-  - {fileID: 5865586234719623449, guid: deade267438d0084396fac066e81d853, type: 3}
+  - {fileID: 2100000, guid: f0cd5952c49433f41ab474e2fb7af21f, type: 2}
+  - {fileID: 2100000, guid: 1c5fd0b409aa2794485c325d4f4e67eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -504,3 +505,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7238150428189541759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066588487097874435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce221c70a41f9764cbd6e10faa3f7a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 13
+  mesh: {fileID: 0}

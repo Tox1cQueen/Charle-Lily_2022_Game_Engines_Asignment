@@ -10,17 +10,16 @@ public class StringHandler : MonoBehaviour
 
     public string[] toasterObjectCodes;
     public Rigidbody[] toasterObjects;
+    public AudioSource toasterAudioSource;
+    public AudioClip[] toasterObjectAudio;
     public string currentValue = "";
-    public float force = 5;
-    public Rigidbody testPrefab;
     public Transform spawnLocation;
     private Rigidbody currentToast;
 
     // Start is called before the first frame update
     void Start()
     {
-
-
+        toasterAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

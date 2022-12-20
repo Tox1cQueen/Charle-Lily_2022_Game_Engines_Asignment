@@ -206,7 +206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236950156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.13, z: 0}
+  m_LocalPosition: {x: 0, y: 7.635, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -254,7 +254,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5930,8 +5930,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toasterObjectCodes:
   - 420
+  - 900973
+  - 2007
+  - 111
+  - 1
+  - 777
+  - 1980
+  - 51
+  - 1991
+  - 30
+  - 64
   toasterObjects:
-  - {fileID: 4323403360880405173, guid: 3f262e44875f605438508ae163e77e37, type: 3}
+  - {fileID: 9086466284260164445, guid: ddc4234ba638c814ab27f803465c06b8, type: 3}
+  - {fileID: -5515980503149801546, guid: 583071d9ea15f73458be6d0a73a2a475, type: 3}
+  - {fileID: 2928125812353681804, guid: 4fe988aff3026d64f8a51daa1feb8885, type: 3}
+  - {fileID: 81984560915499102, guid: cb3242aa881160b43adad595fa99ec00, type: 3}
+  - {fileID: 7205915212921293147, guid: 912ed327823bf064c8631c8ed3b1b9ad, type: 3}
+  - {fileID: 5352330943896450649, guid: d1fbceb737682de4da0293c6a230d2c8, type: 3}
+  - {fileID: 595777048244522379, guid: ca28d3825233591418b4b68b4aa129bb, type: 3}
+  - {fileID: 2301200618489181996, guid: 1f9c2e40e1641c34fa11ab839dbda710, type: 3}
+  - {fileID: 4729394344294254192, guid: 324c1f08b004c824590dc40d49e5d9ad, type: 3}
+  - {fileID: 6603185492261275280, guid: 3ea31ede8c071444386f0da0d4c62761, type: 3}
+  - {fileID: 5003497907666718159, guid: ebd55ced345c93b4a8ac96cba604809b, type: 3}
   currentValue: 
   force: 100
   testPrefab: {fileID: 2935656039931556035, guid: 6e16360f0476fe341962aee13fe67064,

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6308575204259162591}
   - component: {fileID: 7644655057518256824}
   - component: {fileID: 4469336638593907056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 2807220760901426154}
   - component: {fileID: 8585066033606536678}
   - component: {fileID: 1568463726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: imagetostl_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 3629199653464211871}
   - component: {fileID: 4028098860194102652}
   - component: {fileID: 3140124665428100887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 2910488175833570920}
   - component: {fileID: 8293536920768789116}
   - component: {fileID: 9087452262167998195}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,9 +456,10 @@ GameObject:
   - component: {fileID: 6656865487870695686}
   - component: {fileID: 8033996762759674700}
   - component: {fileID: 2721771682125267958}
-  m_Layer: 0
+  - component: {fileID: -5179744175351017670}
+  m_Layer: 8
   m_Name: Pac-Man And Ghost
-  m_TagString: Untagged
+  m_TagString: ToasterObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -512,7 +513,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 0
   rb: {fileID: 595777048244522379}
-  audioSource: {fileID: 2721771682125267958}
+  mainSoundEffect: {fileID: 2721771682125267958}
+  explosion: {fileID: -5179744175351017670}
+  hasExploded: 0
+  angle: 0
+  velocity: 0
 --- !u!65 &8033996762759674700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -583,6 +588,102 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &-5179744175351017670
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6732807441002144903}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 25f4ffac046b64a49937a5a19c488c72, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

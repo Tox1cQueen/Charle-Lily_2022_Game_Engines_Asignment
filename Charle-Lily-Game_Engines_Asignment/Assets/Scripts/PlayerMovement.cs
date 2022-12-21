@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    KeepMusicPlaying keepMusicPlaying;
 
     public CharacterController controller;
 
@@ -21,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     public float fallSpeed;
     public bool isSprinting;
 
+    public GameObject visualiser;
+    
     float x, z;
     Vector3 velocity;
     public bool isGrounded;
@@ -94,7 +98,15 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
         fallSpeed = velocity.y;
+
+        keepMusicPlaying = GameObject.FindWithTag("Music").GetComponent<KeepMusicPlaying>();
         
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            visualiser = GameObject.FindWithTag("Music");
+            Destroy(visualiser);
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }
 

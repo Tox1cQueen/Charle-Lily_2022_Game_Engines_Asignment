@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4403633857764882128}
   - component: {fileID: 7840153231785672924}
   - component: {fileID: 5888150940103240035}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: imagetostl_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,9 +112,10 @@ GameObject:
   - component: {fileID: 5352330943896450654}
   - component: {fileID: 5352330943896450648}
   - component: {fileID: -4275990962754877009}
-  m_Layer: 0
+  - component: {fileID: 2499466812464562912}
+  m_Layer: 8
   m_Name: Money
-  m_TagString: Untagged
+  m_TagString: ToasterObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +181,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 7.7
   rb: {fileID: 5352330943896450649}
-  audioSource: {fileID: -4275990962754877009}
+  mainSoundEffect: {fileID: -4275990962754877009}
+  explosion: {fileID: 2499466812464562912}
+  hasExploded: 0
+  angle: 0
+  velocity: 0
 --- !u!82 &-4275990962754877009
 AudioSource:
   m_ObjectHideFlags: 0
@@ -277,6 +282,102 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &2499466812464562912
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5081790406213945789}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 25f4ffac046b64a49937a5a19c488c72, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5381274548855399040
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +389,7 @@ GameObject:
   - component: {fileID: 3005053353003609253}
   - component: {fileID: 3174817093909647430}
   - component: {fileID: 3493227048575183405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +498,7 @@ GameObject:
   - component: {fileID: 3714827931937944402}
   - component: {fileID: 7561849585846867782}
   - component: {fileID: 7346642502151242697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

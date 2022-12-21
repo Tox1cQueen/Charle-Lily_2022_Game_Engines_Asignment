@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1512664230342489276}
   - component: {fileID: 5090887738952968202}
   - component: {fileID: 3406078785549026631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8807180493315364248}
   - component: {fileID: 1921884890343811470}
   - component: {fileID: 247640811372538452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,9 +179,10 @@ GameObject:
   - component: {fileID: 4503582166224482386}
   - component: {fileID: 5724201341692696743}
   - component: {fileID: -7112905658719832536}
-  m_Layer: 0
+  - component: {fileID: 6234652768963176853}
+  m_Layer: 8
   m_Name: autobots-logo
-  m_TagString: Untagged
+  m_TagString: ToasterObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,7 +242,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 0
   rb: {fileID: 2928125812353681804}
-  audioSource: {fileID: -7112905658719832536}
+  mainSoundEffect: {fileID: -7112905658719832536}
+  explosion: {fileID: 6234652768963176853}
+  hasExploded: 0
+  angle: 0
+  velocity: 0
 --- !u!65 &5724201341692696743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -351,6 +356,102 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &6234652768963176853
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622118870316342884}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 25f4ffac046b64a49937a5a19c488c72, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2928125812870600280
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2928125812870600287}
   - component: {fileID: 2928125812870600286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5048349586908420545}
   - component: {fileID: 2928125813375702239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +651,7 @@ GameObject:
   - component: {fileID: 3704387759836454862}
   - component: {fileID: 543872834811432453}
   - component: {fileID: 8726645821900372763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +734,7 @@ GameObject:
   - component: {fileID: 8754497280687843583}
   - component: {fileID: 1119144334784601380}
   - component: {fileID: 4099073886515662756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +817,7 @@ GameObject:
   - component: {fileID: 4971058584683148576}
   - component: {fileID: 5504364323663959461}
   - component: {fileID: 812020324651580821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +900,7 @@ GameObject:
   - component: {fileID: 2621568390134089040}
   - component: {fileID: 5103263866472124786}
   - component: {fileID: 9042542946509625990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -882,7 +983,7 @@ GameObject:
   - component: {fileID: 6242419026086749044}
   - component: {fileID: 2313488897577421650}
   - component: {fileID: 2902348682454514072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -965,7 +1066,7 @@ GameObject:
   - component: {fileID: 64398526355521757}
   - component: {fileID: 8168418438737583524}
   - component: {fileID: 8738520760660025366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
